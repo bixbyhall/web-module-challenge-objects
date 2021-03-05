@@ -21,6 +21,8 @@ const burger = {
     }
   }
 
+  console.log(burger.discount('teacher'));
+
 
 const reviews = [
     {name: "Daniela", rating: 5, feedback:"Beautiful atmosphere and wonderful vegan options!"},

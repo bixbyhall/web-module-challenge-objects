@@ -54,12 +54,12 @@ export const burger = {
   category: "Lunch", 
   discount: function(string) {
     if (string.toLowerCase === 'teacher' || string.toLowerCase === 'student') {
-      this.price = this.price * 0.75;
+      this.price = this.price * 0.9;
 
     } else {
-      this.price = this.price * .9;
+      this.price = this.price * .75;
     }
-    return this
+    return this.price
   }
 }
 
@@ -115,7 +115,7 @@ Use the getReviewByIndex function below to do the following:
 
 
 function getReviewByIndex(array, index) {
-  return `${array[index].name} gave the restaurant a ${array[index].rating} star review, and there feedback was: ${array[index].feedback}`;
+  return `${array[index].name} gave the restaurant a ${array[index].rating} star review, and their feedback was: ${array[index].feedback}`;
 }
 
 
